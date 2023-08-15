@@ -1,0 +1,37 @@
+// Helpers
+
+// Variables 
+@import '/sass//_1.Helper/variables';
+
+// Mixins
+@import '/sass//_1.Helper/mixins';
+
+
+//Sections
+
+// Grid layout for screens min-width 720px and max
+@import '/sass//_2.Sections/body';
+    
+// Headersection and Navsection
+@import '/sass//_2.Sections/topsection';
+    
+// Mainsection and sidesection for mainpage 
+@import '/sass//_2.Sections/mainpage';
+    
+// Articles    
+@import '/sass//_2.Sections/articles';
+
+// Footersection    
+@import '/sass//_2.Sections/footer';
+
+
+// Other 
+
+// For screens max-width 720px 
+@import '/sass//_3.Othertypes/smalldevice';
+
+// For printing
+@import '/sass/_3.Othertypes/print'
+    
+
+    

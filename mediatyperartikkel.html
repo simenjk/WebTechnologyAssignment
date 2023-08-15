@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--Artikkel om Media Typer-->
+
+<html lang="nb">
+    <head>
+        <title>Media typer</title>
+        <meta meta charset="UTF-8">
+        <link rel="stylesheet" href="./sass/main.css" media="screen">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Simen sin nettside fra Webutvikling høsten 2020.">
+    </head>
+    <body>       
+        <!--Header section-->
+        <header class="headersection">
+            <!--Main page header-->
+            <h1 class="headers" id="mainpageheader">
+                Webutvikling Ressursside
+            </h1> 
+        </header>
+        <!--Top navigation bar-->
+        <nav class="navbarsection">    
+            <label class="navlabel" for="toggle">&#9776;</label>
+            <input class="navtoggle" type="checkbox" id="toggle"/>
+            <ul class="navmenu">
+                <li>
+                    <a href="index.html">Hjem</a>
+                </li>
+                <li>
+                    <a href="htmlskjema.html">HTML-Skjemaer</a>
+                </li>
+                <li>
+                    <a href="mediatyperartikkel.html">Media Typer</a>
+                </li>
+                <li>
+                    <a href="csslayoutsartikkel.html">CSS Layouts</a>
+                </li>
+                <li>
+                    <a href="videoaudioartikkel.html">Video og Audio</a>
+                </li>
+                <li>
+                    <a href="responsivdesignartikkel.html">Responsivt Design</a>
+                </li>
+                <li>
+                    <a href="sassartikkel.html">SASS</a>
+                </li>
+                <li>
+                    <a href="seoartikkel.html">SEO</a>
+                </li>
+                <li>
+                    <a href="tilgjengelighetartikkel.html">Tilgjenglighet</a>
+                </li>
+                <li>
+                    <a href="someartikkel.html">Sosiale Medier</a>
+                </li>
+                <li>
+                    <a href="microdataartikkel.html">Microdata</a>
+                </li>
+            </ul>    
+        </nav>
+
+        <!--Main content-->
+        <main class="mainsection">
+            <!--Contains all main articles-->
+            <section class="articlecontainer">
+                <article class="article" id="article1">
+                    <h2>
+                        Media typer 
+                    </h2>
+                    <p>
+                        Før smarttelefonene så har det vært vanlig å se nettsidene på "landscape-mode" hvor nettsidene er brede.
+                        Dette har endret seg nå, siden de fleste bruker telefonen sin mer enn pc. Måten nettsider blir vist på telefonene er oftest i "portrait-mode".
+                    </p>
+                    <figure >
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/800x518_smartphone_portrait_vs_landscape_orientation.png">
+                        <figcaption>Forskjellen på landscape- og portrait-mode.</figcaption>
+                    </figure>
+                    <p>
+                        For at webdesignere skulle enklere forholde seg til de store endringene da smarttelefonene kom, så måtte de ha et system for å vite hvordan forskjellige typer enheter skal se nettsiden.
+                        Medietyper er måten på hvordan en nettside skal oppføre seg etter hvilket formål eller enhet som brukeren er på. Det lages med hjelp av CSS hvor man linker til et stilark med de egenskapene for den spesielle enheten.
+                        Vi skal se nærmere på hvilke medietyper vi har i CSS.
+                    </p>
+                    <ul>
+                        <li>
+                            <b>All</b> brukes til alle typer enheter. 
+                        </li>
+                        <li>
+                            <b>Handheld</b> er beregnet for håndholdte enheter. 
+                        </li>	
+                        <li>
+                            <b>Print</b> brukes til å gjøre artikler og dokumenter mer lesbart i printet utgave. For eksempel fjerne bakgrunnsbilder og reklamer, lesbar tekst og ikke ha bilder og tekst som overlapper flere sider.  
+                        </li>
+                    </ul> 
+                    <p>
+                        Medietyper som "handheld" og "projection" er nesten dødt nå på grunn av responsivt design og mindre forskjell på pixler hos forskjellige enheter. Håndholdte enheter kan også ha forskjellige størrelser nå som telefoner og tablets.
+                        Dette gjør det vanskelig å vite hva som regnes med en "handheld" medietype.
+                    <br>
+                        Det er derfor bedre å bruke "Media Queries" for å endre på designet til nettsiden. Med Media Queries setter man inn en min-width og max-width hvor størrelsen på enheten spiller rolle på hvordan en nettside skal se ut.
+                        En pc vil gjerne se nettsiden i landscape-mode og en telefon vil se nettsiden i portrait-mode.    
+                    </p>
+                </article>       
+            </section>            
+        </main>
+        <!--Side section-->
+        <aside class="sidesection">
+            <section >
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yU7jJ3NbPdA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <a href="https://css-tricks.com/css-tricks-finally-gets-a-print-stylesheet/#2-use-as-much-of-the-page-as-possible">CSS-Tricks Print Stylesheet</a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media">@Media</a>
+                    </li>
+                    <li>
+                        <a href="https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width/">Media Queries Demystified</a>
+                    </li>
+                    <li>
+                        <a href="https://www.mydevice.io/">mydevice.io</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <!--Footer-->
+        <footer class="footersection">
+            <section>
+                <p>Simen Kjærstad - simen.j.kjaerstad@hiof.no</p>
+            </section>
+        </footer>
+    </body>
+</html>

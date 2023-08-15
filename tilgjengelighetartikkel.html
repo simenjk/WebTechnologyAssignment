@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--Artikkel om Tilgjenglighet-->
+
+<html lang="nb">
+    <head>
+        <title>Tilgjenglighet</title>
+        <meta meta charset="UTF-8">
+        <link rel="stylesheet" href="./sass/main.css" media="screen">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Simen sin nettside fra Webutvikling høsten 2020.">
+    </head>
+    <body>       
+        <!--Header section-->
+        <header class="headersection">
+            <!--Main page header-->
+            <h1 class="headers" id="mainpageheader">
+                Webutvikling Ressursside
+            </h1> 
+        </header>
+        <!--Top navigation bar-->
+        <nav class="navbarsection" tabindex="1">    
+            <label class="navlabel" for="toggle">&#9776;</label>
+            <input class="navtoggle" type="checkbox" id="toggle"/>
+            <ul class="navmenu">
+                <li>
+                    <a href="index.html">Hjem</a>
+                </li>
+                <li>
+                    <a href="htmlskjema.html">HTML-Skjemaer</a>
+                </li>
+                <li>
+                    <a href="mediatyperartikkel.html">Media Typer</a>
+                </li>
+                <li>
+                    <a href="csslayoutsartikkel.html">CSS Layouts</a>
+                </li>
+                <li>
+                    <a href="videoaudioartikkel.html">Video og Audio</a>
+                </li>
+                <li>
+                    <a href="responsivdesignartikkel.html">Responsivt Design</a>
+                </li>
+                <li>
+                    <a href="sassartikkel.html">SASS</a>
+                </li>
+                <li>
+                    <a href="seoartikkel.html">SEO</a>
+                </li>
+                <li>
+                    <a href="tilgjengelighetartikkel.html">Tilgjenglighet</a>
+                </li>
+                <li>
+                    <a href="someartikkel.html">Sosiale Medier</a>
+                </li>
+                <li>
+                    <a href="microdataartikkel.html">Microdata</a>
+                </li>
+            </ul>    
+        </nav>
+
+        <!--Main content-->
+        <main class="mainsection" tabindex="2">
+            <!--Contains all main articles-->
+            <section class="articlecontainer">
+                <article class="article" id="article1">
+                    <h2>
+                        Tilgjenglighet
+                    </h2>
+                    <p>
+                        Med tilgjenglighet så mener man at alle som er på nettet skal ha en lik brukeropplevelese uansett hvem. Dette er noe flere har blitt opptatt av når man lager nettsider og en stor grunn til dette er fordi det er lovpålagt med minstekrav for universell utforming.
+                        Nye nettsider etter 1.juli 2014 må møte minstekravene, og eksisterende nettsider må møte minstekravene senest 1.januar 2021. 
+                    <br>   
+                        Her skal vi se på noen ting man kan gjøre for å få en mer tilgjenglig nettside.
+                    </p>
+                    <h2>
+                        Kontrastfarger
+                    </h2>
+                    <p>
+                        En av de viktigste sansene man bruker når man er på en nettside er synet. Når en svaksynt person kommer på nettsiden kan det være vanskelig å se hva som står på teksten.
+                        Derfor er det viktig at det er klar kontrast mellom bakgrunn og forgrunn. 
+                    </p>
+                    <figure>
+                        <img src="./pics/bad-contrast-vs-good-contrast.jpg" alt="Dårlig kontrast vs God kontrast">
+                        <figcaption>Eksempel på hvorfor kontraster er viktig.</figcaption>
+                    </figure>
+                    <p>
+                        Før jeg lagde denne nettsiden så var det viktig for meg at fargene skulle være behagelige å se på. Det var viktig at teksten var lesbar, men samtidig at ikke kjedelig svart og hvit. 
+                        For å måle hvordan kontrasten på nettsiden min er så brukte jeg et program som heter Colour Contrast Analyser. 
+                        Der tok jeg fargen på bakgrunnen og fargen på teksten of fikk en colour-contrast ratio på 16,7:1 som jeg er fornøyd med.
+                    </p>
+                    <h2>
+                        Kun tastatur
+                    </h2>
+                    <p>
+                        En viktig egenskap siden må ha er å kunne navigeres med bare hjelp av tastaturet. Jeg testet siden min med å navigere med kun tastaturet ved å bruke pilene, tab og enter. Dette funket greit, man ser lenkene klart og man kan navigere seg igjennom siden.
+                        På denne siden la jeg til tabindex for navigasjonsseksjonen, mainseksjonen, sideseksjonen og footerseksjonen slik at man kan navigere seg raskere gjennom større deler av siden. 
+                    </p>
+                    <h2>
+                        Skjermoppleser
+                    </h2>
+                    <p>
+                        Skjermoppleseren jeg brukte var ChromeVox. Den leste opp all teksten som den skal. La til en lang-attribute for i html-taggen slik at skjermoppleserene skal vite at det er en norsk side. 
+                    </p>
+                </article>                    
+            </section>    
+        </main>
+        <!--Side section-->
+        <aside class="sidesection" tabindex="3">
+            <section >
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hufMi9LZX2I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/z8xUCzToff8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/20SHvU2PKsM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <a href="https://www.dreamhost.com/blog/make-your-website-accessible/">10 Ways to Make Your Website Accessible</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Web_accessibility">Wikipedia - Web Accessibility</a>
+                    </li>
+                    <li>
+                        <a href="https://www.washington.edu/accessibility/web/">Developing Accessible Websites</a>
+                    </li>
+                    <li>
+                        <a href="https://www.webaccessibility.com/">Web Accessibility Test</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <!--Footer-->
+        <footer class="footersection" tabindex="4">
+            <section>
+                <p>Simen Kjærstad - simen.j.kjaerstad@hiof.no</p>
+            </section>
+        </footer>
+    </body>
+</html>

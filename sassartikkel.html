@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--Artikkel om Sass-->
+
+<html lang="nb">
+    <head>
+        <title>SASS</title>
+        <meta meta charset="UTF-8">
+        <link rel="stylesheet" href="./sass/main.css" media="screen">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Simen sin nettside fra Webutvikling høsten 2020.">
+    </head>
+    <body>       
+        <!--Header section-->
+        <header class="headersection">
+            <!--Main page header-->
+            <h1 class="headers" id="mainpageheader">
+                Webutvikling Ressursside
+            </h1> 
+        </header>
+        <!--Top navigation bar-->
+        <nav class="navbarsection">    
+            <label class="navlabel" for="toggle">&#9776;</label>
+            <input class="navtoggle" type="checkbox" id="toggle"/>
+            <ul class="navmenu">
+                <li>
+                    <a href="index.html">Hjem</a>
+                </li>
+                <li>
+                    <a href="htmlskjema.html">HTML-Skjemaer</a>
+                </li>
+                <li>
+                    <a href="mediatyperartikkel.html">Media Typer</a>
+                </li>
+                <li>
+                    <a href="csslayoutsartikkel.html">CSS Layouts</a>
+                </li>
+                <li>
+                    <a href="videoaudioartikkel.html">Video og Audio</a>
+                </li>
+                <li>
+                    <a href="responsivdesignartikkel.html">Responsivt Design</a>
+                </li>
+                <li>
+                    <a href="sassartikkel.html">SASS</a>
+                </li>
+                <li>
+                    <a href="seoartikkel.html">SEO</a>
+                </li>
+                <li>
+                    <a href="tilgjengelighetartikkel.html">Tilgjenglighet</a>
+                </li>
+                <li>
+                    <a href="someartikkel.html">Sosiale Medier</a>
+                </li>
+                <li>
+                    <a href="microdataartikkel.html">Microdata</a>
+                </li>
+            </ul>    
+        </nav>
+
+        <!--Main content-->
+        <main class="mainsection">
+            <!--Contains all main articles-->
+            <section class="articlecontainer">
+                <article class="article" id="article1">
+                    <h2>
+                        SASS
+                    </h2>
+                    <p>
+                        SASS er et tillegsspråk til CSS som gir muligheter å skrive kode med flere funskjoner. For å kunne bruke SASS så må man ha en måte å konvertere Sasskoden til CSS. Til denne nettsiden brukte jeg en extension som heter Live Sass Compiler i Visual Studio Code. 
+                        Denne gjør automatisk om Sasskoden til CSSkode. 
+                    </p>
+                    <figure>
+                        <img src="./pics/sassnesting.png" alt="Sass nesting">
+                        <figcaption>Sass gjør koden mer oversiktlig.</figcaption>
+                    </figure>
+                    <p>
+                        Det finnes flere fordeler til å bruke Sass. Det jeg synes er viktigst er hvor oversiktlig man kan skrive koden sin ved å "neste" koden.
+                        Det betyr at man slipper å skrive det samme om igjen mange ganger. På bildet ovenfor kan man se et eksempel på "nesting" i Sass.
+                        <br>
+                        Man kan også enkelt legge til pseudoklasser i koden. Hvis man har for eksempel en tekst man vil ha en effekt på når man holder musa over teksten så trenger man bare å legge til 
+                        "&:hover" nestet til teksten. 
+                    </p>
+                    <figure>
+                        <img src="./pics/sassvariables.png" alt="Sass variabler">
+                        <figcaption>Med Sass kan du lagre egne variabler.</figcaption>
+                    </figure>
+                    <p>
+                        For å gjøre koden enda mer ryddig og strukturert kan man bruke variabler. 
+                        Variabler brukes til å lagre informasjon til en enklere måte. 
+                        <br>
+                        Man bruker dette ved å skrive "$Variabelnavn : hva du vil lagre  ;". Det er vanlig å bruke dette til å lagre nye navn på farger som brukes ofte, eller fonter som blir brukt ofte.
+                    </p>
+                    <figure>
+                        <img src="./pics/sassmixin.png" alt="Sass mixin">
+                        <figcaption>Mixin til en button</figcaption>
+                    </figure>
+                    <p>
+                        "Mixin" kan brukes til å samle større deler kode som brukes flere steder. Man bruker dette ved å lage 
+                        På eksemplet over så kan man se kode for å lage en "button". Hvis man skal bruke denne knappen flere ganger så er det lurt å lagre koden inn i en Mixin. Man kan også lagre variabler inne i en Mixin, slik at man kan justere på funksjonen man lager. Dette gjør man ved å skrive "@mixin Funksjonsnavn($eventuellvariabel) { koden som skal bli lagret: $eventuellvariabel } ".
+                        <br>
+                        For å kunne bruke Mixin så må man skrive inn "@include Funksjonsnavn($eventuellvariabel)". 
+                    </p>
+                    <p>
+                        Man kan også dele opp Sasskoden i flere deler slik at ikke all koden er på et sted. Dette gjør det enklere å navigere seg rundt i koden. 
+                        Dette er hvordan jeg har delt opp Sasskoden. Man bruker @import i hovedfilen for å importere inn andre Sassfiler.
+
+                    </p>
+                    <ul>
+                        <li>
+                            <b>Main</b> er hovedfilen og har ingen ren kode inne i seg, men er heller en samleliste av alle Sassfilene. 
+                        </li>
+                        <li>
+                            <b>Variables</b> holder variabler.
+                        </li>
+                        <li>
+                            <b>Mixins</b> holder på funksjoner som jeg har brukt flere ganger. Eks funksjon for flexlayout.
+                        </li>
+                        <li>
+                            <b>Topsection</b> holder på koden for header- og navseksjonene.
+                        </li>
+                        <li>
+                            <b>Mainpage</b> holder på mainsection og sidesection på hovedsiden.
+                        </li>
+                        <li>
+                            <b>Articles</b> holder på koden for artiklene. 
+                        </li>
+                        <li>
+                            <b>Footer</b> holder på koden for footeren.
+                        </li>
+                        <li>
+                            <b>Smalldevice</b> holder på koden for enheter under 720px.
+                        </li>
+                    </ul>
+                </article>                    
+            </section>    
+        </main>
+        <!--Side section-->
+        <aside class="sidesection">
+            <section >
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Zz6eOVaaelI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qUnIReTCsZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <a href="https://sass-lang.com/">Sass hjemmeside</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/sass/">W3schools - Sass</a>
+                    </li>
+                    <li>
+                        <a href="https://sass-guidelin.es/#mixins">Sass Guidelines</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <!--Footer-->
+        <footer class="footersection">
+            <section>
+                <p>Simen Kjærstad - simen.j.kjaerstad@hiof.no</p>
+            </section>
+        </footer>
+    </body>
+</html>

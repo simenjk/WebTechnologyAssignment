@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--Artikkel om Video og Audio-->
+
+<html lang="nb">
+    <head>
+        <title>Responsiv Design</title>
+        <meta meta charset="UTF-8">
+        <link rel="stylesheet" href="./sass/main.css" media="screen">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Simen sin nettside fra Webutvikling høsten 2020.">
+    </head>
+    <body>       
+        <!--Header section-->
+        <header class="headersection">
+            <!--Main page header-->
+            <h1 class="headers" id="mainpageheader">
+                Webutvikling Ressursside
+            </h1> 
+        </header>
+        <!--Top navigation bar-->
+        <nav class="navbarsection">    
+            <label class="navlabel" for="toggle">&#9776;</label>
+            <input class="navtoggle" type="checkbox" id="toggle"/>
+            <ul class="navmenu">
+                <li>
+                    <a href="index.html">Hjem</a>
+                </li>
+                <li>
+                    <a href="htmlskjema.html">HTML-Skjemaer</a>
+                </li>
+                <li>
+                    <a href="mediatyperartikkel.html">Media Typer</a>
+                </li>
+                <li>
+                    <a href="csslayoutsartikkel.html">CSS Layouts</a>
+                </li>
+                <li>
+                    <a href="videoaudioartikkel.html">Video og Audio</a>
+                </li>
+                <li>
+                    <a href="responsivdesignartikkel.html">Responsivt Design</a>
+                </li>
+                <li>
+                    <a href="sassartikkel.html">SASS</a>
+                </li>
+                <li>
+                    <a href="seoartikkel.html">SEO</a>
+                </li>
+                <li>
+                    <a href="tilgjengelighetartikkel.html">Tilgjenglighet</a>
+                </li>
+                <li>
+                    <a href="someartikkel.html">Sosiale Medier</a>
+                </li>
+                <li>
+                    <a href="microdataartikkel.html">Microdata</a>
+                </li>
+            </ul>    
+        </nav>
+
+        <!--Main content-->
+        <main class="mainsection">
+            <!--Contains all main articles-->
+            <section class="articlecontainer">
+                <article class="article" id="article1">
+                    <h2>
+                        Responsiv design
+                    </h2>
+                    <p>
+
+                        Responsiv design handler om å bruke HTML og CSS slik at nettsidene skal se like bra ut på alle enheter. Praksisen består av en blanding av fleksible  grids og layouts, bilder og smart bruk av CSS media queries. 
+                    </p>
+                    <h2>
+                        CSS-Layouts
+                    </h2>
+                    <p>
+                        CSS Grid Layout er et todimensjonalt rutenettbasert layoutsystem som gjør det enklere å designe layoutet til en nettside. 
+                        Før så måtte man pirke med posisjonering og float for å få de forskjellige elementene til å stå der du vil, noe du slipper med Grid. 
+                        Grid er veldig nyttig når det kommer til større seksjoner i nettsiden som header, nav, main, aside og footer. Hvis man vil ha main og aside ved siden av hverandre så kan man enkelt gjøre dette med Grid.  
+                    </p>
+                    <p>
+                        Med Grid kan man velge hvor mange rader og kolonner man skal ha i nettsiden. I disse radene og kolonnene kan man velge hvor hvert element skal ligge.   
+                        Dette gjør at nettsiden kan ha en sideseksjon uten at man må bruke for eksempel float. 
+                    </p>
+                    <figure>
+                        <img src="./pics/wireframe.PNG" alt="wireframe">
+                        <figcaption>
+                            Wireframe til denne nettsiden
+                        </figcaption>
+                    </figure>
+                    <p>
+                        På bildet over kan man se hvordan jeg tenkte nettsiden skulle se ut.
+                        Siden jeg skulle ha flere store sekskjoner som header, navigasjonsbar, hovedseksjon, sideseksjon og footer, så var det naturlig å bruke Grid til å designe dette.
+                        
+                    </p>
+                    <p>
+                        CSS Flexbox tar sikte på å gi en mer effektiv måte å legge ut, justere og fordele plass mellom gjenstander i en container, selv når størrelsen er ukjent.
+                        Navnet Flexbox kommer av at elementene kan "flexe" eller være responsive ved å bruke ledig plass på best mulig måte, og hoppe til neste linje hvis det ikke er plass.
+                        Da slipper man at elementer havnet utenfor nettsiden slik at man ikke kan se elementet.                
+                    </p>
+                    <p>
+                        Fra wireframen så visste jeg at jeg skulle bruke Flex til artiklene på forsiden. Jeg ville at det skulle virke som at boksene "fløyt" slik at hvis man krympet siden så ville det være færre artikler horisontalt. 
+                        Jeg ville at på en større skjerm så kunne det være plass til 2-3 artikler ved siden av hveranre, men i det du krymper siden til mobilstørrelse så vil det kun være en artikkel. 
+                    </p>
+                    <figure>
+                        <img src="./pics/grid-vs-flexbox-2.png" alt="forskjell på grid og flex">
+                        <figcaption>Forskjell på Grid og Flex</figcaption>
+                    </figure>
+                    <h2>
+                        Mediatyper
+                    </h2>
+                    <p>
+                        Mediatyper er en måte å sortere CSS koden til etter hvilken type enhet som brukes. De vanligste mediatypene er "print" og "screen".
+                        "Print" vil da ha egne egenskaper når man skal printe ut en side. Før så brukte man også mediatypen "Hanheld" som ble brukt til mobiler. 
+                        Dette er noe man ikke gjør nå siden skjermstørrelsene og pixeloppløsningen endrer seg hele tiden. Det er vanligere å bruke media queries til dette. 
+                    </p>
+                    <h2> 
+                        Media Queries 
+                    </h2>
+                    <p>
+                        Media Queries er en funksjon som kom i CSS3 som giør det mulig at innholdet på en nettside skalerer seg etter hvilken type enhet man bruker som smarttelefoner og pcer.
+                        Med Media Queries setter man inn en min-width og max-width hvor størrelsen på enheten spiller rolle på hvordan en nettside skal se ut.
+                        En pc vil gjerne se nettsiden i landscape-mode og en telefon vil se nettsiden i portrait-mode.                         
+                    </p> 
+                    <h2>
+                        Fleksible størrelser
+                    </h2>                       
+                    <p>
+                        Fleksible størrelser er størrelser som blir satt som kan endre seg etter skjermstørrelsen. Når man bruker størrelsen "pixel" så er det et fast bestemt størrelse på alle typer enheter.
+                        Det betyr at hvis for eksempel et bilde har høyde og bredde på 50px, så vil dette bildet ta mer plass på en smarttelefon enn på en pcskjerm, siden skjermen på pcen er vanligvis større enn mobilen.  
+                        Det er derfor bedre å bruke en fleksibel størrelse som %, siden denne vil vokse eller minske sammen med skjermen. Hvis et bilde har en høyde og bredde på 50% så vil det være 50% på mobilen og pcskjermen.
+                    </p>  
+                </article>                    
+            </section>    
+        </main>
+        <!--Side section-->
+        <aside class="sidesection">
+            <section >
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4Av7ma4v46Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <a href="https://web.dev/responsive-web-design-basics/#size-content">Responsive Web Design Basics</a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design">Responsive Design</a>
+                    </li>
+                    <li>
+                        <a href="https://www.invisionapp.com/inside-design/examples-responsive-web-design/">11 powerful examples of responsive web design</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">W3schools - Mediaqueries</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <!--Footer-->
+        <footer class="footersection">
+            <section>
+                <section>
+                    <p>Simen Kjærstad - simen.j.kjaerstad@hiof.no</p>
+                </section>
+            </section>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--Artikkel om CSS-Layouts-->
+
+<html lang="nb">
+    <head>
+        <title>CSS Layouts</title>
+        <meta meta charset="UTF-8">
+        <link rel="stylesheet" href="./sass/main.css" media="screen">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Simen sin nettside fra Webutvikling høsten 2020.">
+    </head>
+    <body>       
+        <!--Header section-->
+        <header class="headersection">
+            <!--Main page header-->
+            <h1 class="headers" id="mainpageheader">
+                Webutvikling Ressursside
+            </h1> 
+        </header>
+        <!--Top navigation bar-->
+        <nav class="navbarsection">    
+            <label class="navlabel" for="toggle">&#9776;</label>
+            <input class="navtoggle" type="checkbox" id="toggle"/>
+            <ul class="navmenu">
+                <li>
+                    <a href="index.html">Hjem</a>
+                </li>
+                <li>
+                    <a href="htmlskjema.html">HTML-Skjemaer</a>
+                </li>
+                <li>
+                    <a href="mediatyperartikkel.html">Media Typer</a>
+                </li>
+                <li>
+                    <a href="csslayoutsartikkel.html">CSS Layouts</a>
+                </li>
+                <li>
+                    <a href="videoaudioartikkel.html">Video og Audio</a>
+                </li>
+                <li>
+                    <a href="responsivdesignartikkel.html">Responsivt Design</a>
+                </li>
+                <li>
+                    <a href="sassartikkel.html">SASS</a>
+                </li>
+                <li>
+                    <a href="seoartikkel.html">SEO</a>
+                </li>
+                <li>
+                    <a href="tilgjengelighetartikkel.html">Tilgjenglighet</a>
+                </li>
+                <li>
+                    <a href="someartikkel.html">Sosiale Medier</a>
+                </li>
+                <li>
+                    <a href="microdataartikkel.html">Microdata</a>
+                </li>
+            </ul>    
+        </nav>
+        <!--Main content-->
+        <main class="mainsection">
+            <!--Contains all main articles-->
+            <section class="articlecontainer">
+                <article class="article" id="article1">
+                    <h2>
+                        CSS-Layout
+                    </h2>
+                    <p>
+                        Layout er viktig når det kommer til webdesign. Å bruke plassen man har på best mulig måte kan være vanskelig, men HTML og CSS har noen metoder for at det skal være enklere.
+                        Det første man bør gjøre når man skal lage en nettside, er å planlegge hvor de forskjellige elementene skal ligge og hvor stor del på nettsiden den skal ta. Dette kan man enkelt gjøre med enkle skisser eller wireframes. 
+                        Under er et bilde av wireframen av hvordan jeg tenkte meg denne nettsiden skulle se ut. 
+                    </p>                  
+                    <figure>
+                        <img src="pics/wireframe.PNG" alt="Min wireframe">
+                        <figcaption>Enkel wireframe av hvordan jeg tenkte nettsiden skulle se ut. Brukte samme designet på artikkelsidene<figcaption>
+                    </figure>
+                    <p>
+                        I wireframen jeg tegnet tenkte jeg å ha fra toppen en header, navigasjonsbar, en hovedseksjon med en sideseksjon ved siden av, og til slutt, en footer. 
+                        Jeg visste at det var viktig å bruke de semantiske HTML taggene, slik at både siden blir riktig strukturert og at det ble enklere å holde oversikt over de forskjellige seksjonene. 
+                        Etter HTML koden var fylt ut med "Lorem Ipsum", kunne jeg begynne å bruke de to CSS Layouts metodene jeg skal skrive om.
+                    </p>
+                    <h2 class="smallarticleheader">
+                        Grid
+                    </h2>
+                    <p>
+                        CSS Grid Layout er et todimensjonalt rutenettbasert layoutsystem som gjør det enklere å designe layoutet til en nettside. Før så måtte man pirke med posisjonering og float for å få de forskjellige elementene til å stå der du vil, noe du slipper med Grid. 
+                        Grid er veldig nyttig når det kommer til større seksjoner i nettsiden som header, nav, main, aside og footer. Hvis man vil ha main og aside ved siden av hverandre så kan man enkelt gjøre dette med Grid.  
+                    </p>
+                    <figure>
+                        <img src="pics/grideksempel1.webp" alt="GridEksempel">
+                        <figcaption>Eksempel på hvordan Grid kan strukturere nettsider på forskjellige enheter.</figcaption>
+                    </figure>
+                    <p>
+                        Med Grid kan man velge hvor mange rader og kolonner man skal ha i nettsiden. I disse radene og kolonnene kan man velge hvor hvert element skal ligge.  	
+                        Dette gjør at nettsiden kan ha en sideseksjon uten at man må bruke for eksempel float. 
+                    </p>
+                    <h2 class="smallarticleheader">
+                        Flexbox
+                    </h2>
+                    <p>
+                        CSS Flexbox tar sikte på å gi en mer effektiv måte å legge ut, justere og fordele plass mellom gjenstander i en container, selv når størrelsen er ukjent.
+                        Navnet Flexbox kommer av at elementene kan "flexe" eller være responsive ved å bruke ledig plass på best mulig måte, og hoppe til neste linje hvis det ikke er plass.
+                        Da slipper man at elementer havnet utenfor nettsiden slik at man ikke kan se elementet.                
+                        Her er et visuelt eksempel på forskjellen mellom Flex og Grid.
+                    <figure>
+                        <img src="pics/grid-vs-flexbox.png" alt="Grid og Flex forskjell">
+                        <figcaption>Forskjellen på Grid og Flex</figcaption>
+                    </figure>
+                    <p>  
+                        Flexbox opererer med kun en dimensjon, mens Grid operer med to. 
+                        Denne layoutmetoden er svært nyttig i mindre komponenter, henseende til Grid som er ment for å gi layout til større seksjoner. 
+                        Bruker man Flex og Grid så vil man få en responsiv nettside som endrer størrelsene på elementene av seg selv.                        
+                    </p>                  
+                </article>       
+            </section>            
+        </main>
+        <!--Side section-->
+        <aside class="sidesection">
+            <section >
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RSIclWvNTdQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jV8B24rSN5o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fqNPSSoMO9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <a href="https://learnlayout.com/">learnlayout</a>
+                    </li>
+                    <li>
+                        <a href="https://css-tricks.com/guides/layout/">The Different Kinds of CSS Layout</a>
+                    </li>
+
+                    <li>
+                        <a href="https://learncssgrid.com/">learncssgrid</a>
+                    </li>
+                    <li>
+                        <a href="https://flexbox.help/">flexbox.help</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <!--Footer-->
+        <footer class="footersection">
+            <section>
+                <section>
+                    <p>Simen Kjærstad - simen.j.kjaerstad@hiof.no</p>
+                </section>
+            </section>
+        </footer>
+    </body>
+</html>

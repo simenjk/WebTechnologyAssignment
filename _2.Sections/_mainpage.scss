@@ -1,0 +1,107 @@
+.mainsection {
+    grid-area: main;
+
+    .frontarticlecontainer {
+        @include flexfunc(row , wrap , space-evenly , flex-start, auto );   
+        width: 100%;
+        margin: 10px;
+        background-color: rgba(0, 47, 255, 0.123);
+        border: #27406096 2px solid;
+    
+
+
+            /* Frontpage Main Section*/
+
+        .frontarticle {
+            @include flexfunc(row ,wrap ,flex-start , auto, center);
+            margin: 10px;
+            width: 40%;
+            border: rgb(189, 189, 189) 1.5px solid;
+            box-shadow: 3px 5px #88888879;
+            background-color: #f8e1d2;    
+            
+                h2 {
+                    margin-left: 10%;
+                    font-size: 1.2em;
+
+
+                }
+
+                p {
+                    margin: 2% 10% 2% 10%; 
+
+                }
+
+                figure {
+                    align-self: center;
+                    text-align: center;
+                    
+                    img {
+                        width: 65%;
+                        align-self: center;
+                        border: rgba(191, 197, 255, 0.342) 1.5px solid;
+                    }
+                }
+
+                .button_link {
+                    @include buttonlink(2% 10% 2% 10%, 2px 6px 2px 6px, 11px,  #7A9CC6);
+
+                        &:hover {
+                            text-decoration :underline;
+
+                        }
+                    }
+                
+                }
+            }
+        }
+    
+
+/* Side section */
+
+.sidesection {
+    grid-area: side;
+    @include flexfunc(column ,wrap ,auto ,auto ,auto );
+    text-align: center;
+    list-style: none;
+    width: 80%;
+    height: fit-content;
+    margin: 10px 30px 5px;
+    background-color: #2b486e6e;
+    border: #27406096 2px solid;
+
+    section {
+
+        iframe {
+            width: 95%;
+            height: auto;
+            margin: 5px;
+            border: #27406096 2px solid;
+
+        }
+
+        ul {
+            list-style: none;
+
+            li > a {
+                text-decoration: none;
+                color: #1B2845;
+                margin: 0px 20px;
+                padding: 10px;
+                font-weight: bold;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+        .sidebutton {
+            @include buttonlink(2px 10px 5px 10px, 32px 36px 32px 36px, 11px,  #ff9b90);
+    
+            &:hover {
+                text-decoration: underline; 
+            }
+        }
+    }
+}

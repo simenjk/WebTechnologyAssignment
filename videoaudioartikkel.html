@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--Artikkel om Video og Audio-->
+
+<html lang="nb">
+    <head>
+        <title>Video og Audio</title>
+        <meta meta charset="UTF-8">
+        <link rel="stylesheet" href="./sass/main.css" media="screen">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Simen sin nettside fra Webutvikling høsten 2020.">
+    </head>
+    <body>       
+        <!--Header section-->
+        <header class="headersection">
+            <!--Main page header-->
+            <h1 class="headers" id="mainpageheader">
+                Webutvikling Ressursside
+            </h1> 
+        </header>
+        <!--Top navigation bar-->
+        <nav class="navbarsection">    
+            <label class="navlabel" for="toggle">&#9776;</label>
+            <input class="navtoggle" type="checkbox" id="toggle"/>
+            <ul class="navmenu">
+                <li>
+                    <a href="index.html">Hjem</a>
+                </li>
+                <li>
+                    <a href="htmlskjema.html">HTML-Skjemaer</a>
+                </li>
+                <li>
+                    <a href="mediatyperartikkel.html">Media Typer</a>
+                </li>
+                <li>
+                    <a href="csslayoutsartikkel.html">CSS Layouts</a>
+                </li>
+                <li>
+                    <a href="videoaudioartikkel.html">Video og Audio</a>
+                </li>
+                <li>
+                    <a href="responsivdesignartikkel.html">Responsivt Design</a>
+                </li>
+                <li>
+                    <a href="sassartikkel.html">SASS</a>
+                </li>
+                <li>
+                    <a href="seoartikkel.html">SEO</a>
+                </li>
+                <li>
+                    <a href="tilgjengelighetartikkel.html">Tilgjenglighet</a>
+                </li>
+                <li>
+                    <a href="someartikkel.html">Sosiale Medier</a>
+                </li>
+                <li>
+                    <a href="microdataartikkel.html">Microdata</a>
+                </li>
+            </ul>    
+        </nav>
+
+        <!--Main content-->
+        <main class="mainsection">
+            <!--Contains all main articles-->
+            <section class="articlecontainer">
+                <article class="article" id="article1">
+                    <h2>
+                        Video og Audio
+                    </h2>
+                    <p>
+                        I HTML5 så ble video og audio taggen introdusert for å gjøre det enklere å implementere video- og lydklipp inn i en nettside. Vi skal se nærmere på hvordan vi kan implementere video og audio.
+                    </p>  
+                    <h2>
+                        Video
+                    </h2>
+                    <p>
+                        For å kunne implementere et videoelement så må man bruke video-taggen. Inne i video taggen så skriver attributtene «width» for å gi videoen en bredde, og «height» for å gi videoen høyde. 
+                        I tillegg så kan man legge til attributtene «autoplay» som gjør at videoen spiller av seg selv, «controls» som gir videoen en controlbar som gjør det mulig å se hvor lang videoen er og spole, 
+                        «loop» som gjør at videoen spiller av på nytt etter at den er ferdig, «poster» som gir videoen et miniatyrbilde.   
+                    </p>
+                    <p>
+                        For å velge hvilken video som skal være på nettsiden så må «source» taggen bli brukt. Inne i den skriver man src=«videoen som velges.hvilken type fil». 
+                        Man kan legge til flere videoer med forskjellige typer filer. Da vil nettleseren bruke den første filen som blir støttet. Den vanligste filtypen som blir brukt er mp4. Denne blir støttet av de fleste nettlesere. 
+                        Man kan også bruke filtypene WebM eller Ogg, men disse blir ikke støttet av alle de mest populære nettleserne. 
+                        Man kan også legge til en tekst innenfor videotaggen slik at hvis nettleseren ikke støtter filtypene så vil teksten komme opp istedet.    
+                    </p>
+
+                    <h2>
+                        Audio
+                    </h2>
+                    <p>
+                        Audio-taggen er ganske lik video-taggen. For å implementere audio så må man bruke audio-taggen. Inne i den så kan man bruke attributtene «autoplay», «controls» og «loop» slik som i video-taggen. 
+                        Man må også bruke source-taggen på samme måte som man gjør når man skal implementere video. Den vanligste filtypen er mp3, som støttes av de fleste nettleserene.
+                        Man kan bruke filtypene Wav eller Ogg, men blir ikke støttet av alle de mest populære nettleserne.    
+                    </p>
+                    <section class="articlevideo">
+                        <iframe src="https://www.youtube.com/embed/OOy764mDtiA"  allowfullscreen></iframe>
+                    </section>
+                </article>                    
+            </section>    
+        </main>
+        <!--Side section-->
+        <aside class="sidesection">
+            <section >
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Sq4NFODUjGg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </section>
+            <section>
+                <ul>
+                    <li>
+                        <a href="https://www.w3schools.com/tags/tag_video.asp">W3schools - Video tag</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/tags/tag_source.asp">W3schools - Source tag</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/html/html5_audio.asp">W3schools - Audio tag</a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">Audio: The Embed Audio element</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <!--Footer-->
+        <footer class="footersection">
+            <section>
+                <p>Simen Kjærstad - simen.j.kjaerstad@hiof.no</p>
+            </section>
+        </footer>
+    </body>
+</html>

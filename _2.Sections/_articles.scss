@@ -1,0 +1,67 @@
+.articlecontainer {
+    @include flexfunc(row ,wrap ,space-around ,auto ,space-between ); 
+    width: 100%;
+    margin: 10px;
+    background-color: rgba(0, 47, 255, 0.123);
+    border: #27406096 2px solid;
+
+    .article {
+        @include flexfunc(row ,wrap ,center ,auto ,auto );
+        margin: 10px;
+        width: 100%;
+        background-color: #f8e1d2;
+        border: rgb(189, 189, 189) 1.5px solid;
+        box-shadow: 2px 4px #88888879;
+
+        h2 {
+            text-align: left;;
+            font-size: xx-small;
+        }
+
+        p {
+            margin: 0.2em 3em;
+            line-height: 24px;
+        }
+
+        figure {
+            flex-grow: 1;
+            flex-basis: 100%;
+            align-self: center;
+            text-align: center;  
+
+            img {
+                width: 50%;
+                align-self: center;
+            }
+        }
+
+        .articlevideo {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%;
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    
+
+        .htmlskjema {
+            justify-self: center;
+            text-align: center;
+        }
+
+        ul > li {
+            margin: 0.2em 2em;
+            line-height: 24px;
+    
+        }
+    }
+}

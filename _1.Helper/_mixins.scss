@@ -1,0 +1,39 @@
+// mixins
+
+// For Grid layout
+@mixin gridfunc($row, $column) {
+    display: grid;
+    grid-template-rows: $row;
+    grid-template-columns: $column; 
+    
+}
+// Wave background image
+@mixin backgroundimagewave { 
+    background-image: url(../pics/white-waves.png);
+    background-size: auto;
+    background-repeat: repeat-y repeat-x;
+}
+
+// For Flex layout
+@mixin flexfunc ($dir, $wrap, $juscon, $alitm, $alcon) {
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $juscon;
+    align-items: $alitm;
+}
+
+// Button
+@mixin buttonlink($margin, $padding, $fontsize, $bcolor) {
+    margin: $margin;
+    padding: $padding;
+    border-top: 1px solid #CCCCCC;
+    border-right: 2px solid #545454;
+    border-bottom: 2px solid #545454;
+    border-left: 1px solid #CCCCCC;
+    font: bolder $fontsize Arial;
+    text-decoration: none;
+    background-color: $bcolor;
+    color: black;  
+
+}

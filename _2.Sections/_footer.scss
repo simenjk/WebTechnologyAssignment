@@ -1,0 +1,15 @@
+.footersection {
+    grid-area: footer; 
+    @include flexfunc(column ,wrap ,auto ,flex-start ,auto );  
+    margin: 5px;
+    background-color: rgba(0, 47, 255, 0.123);
+    border: #2740607e 2px solid;
+
+        section{
+        
+            p {
+                margin-left: 10%;
+                
+            }
+    }
+}

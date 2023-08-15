@@ -1,0 +1,15 @@
+@media all and (min-width:720px) {
+    body {
+        @include gridfunc(auto, 1fr 2fr 1fr);
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main side"
+        "footer footer footer"
+        ;
+        @include backgroundimagewave();
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    
+    } 
+}

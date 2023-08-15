@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--Artikkel om Microdata-->
+
+<html lang="nb">
+    <head>
+        <title>Microdata</title>
+        <meta meta charset="UTF-8">
+        <link rel="stylesheet" href="./sass/main.css" media="screen">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Simen sin nettside fra Webutvikling høsten 2020.">
+    </head>
+    <body>       
+        <!--Header section-->
+        <header class="headersection">
+            <!--Main page header-->
+            <h1 class="headers" id="mainpageheader">
+                Webutvikling Ressursside
+            </h1> 
+        </header>
+        <!--Top navigation bar-->
+        <nav class="navbarsection" tabindex="1">    
+            <label class="navlabel" for="toggle">&#9776;</label>
+            <input class="navtoggle" type="checkbox" id="toggle"/>
+            <ul class="navmenu">
+                <li>
+                    <a href="index.html">Hjem</a>
+                </li>
+                <li>
+                    <a href="htmlskjema.html">HTML-Skjemaer</a>
+                </li>
+                <li>
+                    <a href="mediatyperartikkel.html">Media Typer</a>
+                </li>
+                <li>
+                    <a href="csslayoutsartikkel.html">CSS Layouts</a>
+                </li>
+                <li>
+                    <a href="videoaudioartikkel.html">Video og Audio</a>
+                </li>
+                <li>
+                    <a href="responsivdesignartikkel.html">Responsivt Design</a>
+                </li>
+                <li>
+                    <a href="sassartikkel.html">SASS</a>
+                </li>
+                <li>
+                    <a href="seoartikkel.html">SEO</a>
+                </li>
+                <li>
+                    <a href="tilgjengelighetartikkel.html">Tilgjenglighet</a>
+                </li>
+                <li>
+                    <a href="someartikkel.html">Sosiale Medier</a>
+                </li>
+                <li>
+                    <a href="microdataartikkel.html">Microdata</a>
+                </li>
+            </ul>    
+        </nav>
+
+        <!--Main content-->
+        <main class="mainsection" tabindex="2">
+            <!--Contains all main articles-->
+            <section class="articlecontainer">
+                <article class="article" id="article1">
+                    <h2>
+                        Microdata
+                    </h2>
+                    <p>
+                        Microdata er en standardisert måte å gi ekstra semantikk på nettsidene dine. 
+                        Microdata lar deg definere dine egne tilpassede elementer og begynne å legge inn egendefinerte egenskaper på websidene dine. Microdata består ofte av en gruppe av navn- og verdipar.  
+                        Søkemotorer og webcrawlere kan trekke ut og behandle microdata fra en webside og bruke den til å gi brukerne en rikere opplevelse på nettet.
+                        Søkemotorer drar stor nytte av direkte tilgang til disse strukturerte dataene fordi det gjør det mulig for søkemotorer å forstå informasjonen på websider bedre og gi mer relevante resultater til brukerne.
+                    </p>
+                    <figure>
+                        <img src="../websamleside/pics/semanticweb.png" alt="Web of Data visualisert">
+                        <figcaption>En visualisering over hvordan Web of Data kan se ut.</figcaption>
+                    </figure>
+                    <p>
+                        Web of Data eller semantisk web er en utvidelse av "world wide web" slik at internett ikke bare blir mer lesbart for mennesker, men også for maskinene.
+                        Istedet for at alt på internett skal bestå av dokumenter med tekst, så skal det bestå av "ting". 
+                        For eksempel så kan dataen skjønne at en kjent person som Leonardo da Vinci er en kjent kunstner, oppfinner og arkitekt, istedet for tekststrengen "Leonardo da Vinci". 
+                        Dette gir et lag med mening over det dokumentet. 
+                    </p>
+                    <p>
+                        I tillegg til det jeg har skrevet om hittil så finnes det flere forskjellige måter å inkludere strukturell data på. Her er noen markup metoder:
+                    </p>
+                    <ul>
+                        <li>
+                            Microdata: måten jeg har skrevet om over.
+                        </li>
+                        <li>
+                            JSON-LD: står for JavaScript Object Notation for Linked Data, som består av flerdimensjonale matriser
+                        </li>
+                        <li>
+                            RDFa : står for Resource Description Framework in attributes, og legger til et sett med utvidelser på attributtnivå til HTML, XHTML og forskjellige XML-baserte dokumenttyper for å legge inn rike metadata i nettdokumenter.
+                        </li>
+                    </ul>
+                    <h2>
+                        Eksempler
+                    </h2>
+                    <p>
+                        Her er en liste over egne eksempler hvor jeg har brukt schema.org til å lage egne microdata eksempler. Første del av linken er hvilken type skjema jeg brukte og andre del er hva jeg valgte å skrive om.
+                        Kode og test er på samme side.
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="./Microdataeksempler/eksempel1.html" >Organization: SpaceX</a> 
+                        </li>
+                        <li>
+                            <a href="./Microdataeksempler/eksempel2.html" >Person: Elvis Presley</a> 
+                        </li>
+                        <li>
+                            <a href="./Microdataeksempler/eksempel3.html" >Movie: Edward Scissorhands</a> 
+                        </li>
+                        <li>
+                            <a href="./Microdataeksempler/eksempel4.html" >FastFoodRestaurant: McDonald's</a> 
+                        </li>
+                        <li>
+                            <a href="./Microdataeksempler/eksempel5.html" >Book: Nineteen Eighty-Four </a> 
+                        </li>
+                    </ul>
+                </article>                    
+            </section>    
+        </main>
+        <!--Side section-->
+        <aside class="sidesection" tabindex="3">
+            <section >
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2Ze5rvugvE8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Microdata_(HTML)">Wikipedia - Microdata</a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata">Mozilla - Microdata</a>
+                    </li>
+                    <li>
+                        <a href="https://schema.org/">schema.org</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <!--Footer-->
+        <footer class="footersection" tabindex="4">
+            <section>
+                <p>Simen Kjærstad - simen.j.kjaerstad@hiof.no</p>
+            </section>
+        </footer>
+    </body>
+</html>

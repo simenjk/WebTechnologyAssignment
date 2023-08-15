@@ -1,0 +1,47 @@
+@media print{
+
+
+    @page {
+            margin: 0.2cm;
+    }
+        
+    body {
+        background-color: white;
+        color: black;
+        height: auto;
+        font-size: 12pt; 
+        font-family: serif, sans-serif;
+    
+    }
+    
+    header, nav, aside, footer {
+        display: none;
+    
+    }
+    
+    
+    img{
+        max-width: 100%;
+        page-break-inside: avoid;
+        page-break-before: always;
+    
+    }
+    
+    article {
+        page-break-inside: avoid;
+        page-break-before: always;
+    
+    }
+    
+    .formexample {
+        display: none;
+    
+    }
+    
+    img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    
+    }
+    
+    }

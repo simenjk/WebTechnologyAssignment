@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--Artikkel om HTML-skjemaer-->
+
+<html lang="nb">
+    <head>
+        <title>HTML-Skjema</title>
+        <meta meta charset="UTF-8">
+        <link rel="stylesheet" href="./sass/main.css" media="screen">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Simen sin nettside fra Webutvikling høsten 2020.">
+    </head>
+    <body>       
+        <!--Header section-->
+        <header class="headersection">
+            <!--Main page header-->
+            <h1 class="headers" id="mainpageheader">
+                Webutvikling Ressursside
+            </h1> 
+        </header>
+        <!--Top navigation bar-->
+        <nav class="navbarsection">    
+            <label class="navlabel" for="toggle">&#9776;</label>
+            <input class="navtoggle" type="checkbox" id="toggle"/>
+            <ul class="navmenu">
+                <li>
+                    <a href="index.html">Hjem</a>
+                </li>
+                <li>
+                    <a href="htmlskjema.html">HTML-Skjemaer</a>
+                </li>
+                <li>
+                    <a href="mediatyperartikkel.html">Media Typer</a>
+                </li>
+                <li>
+                    <a href="csslayoutsartikkel.html">CSS Layouts</a>
+                </li>
+                <li>
+                    <a href="videoaudioartikkel.html">Video og Audio</a>
+                </li>
+                <li>
+                    <a href="responsivdesignartikkel.html">Responsivt Design</a>
+                </li>
+                <li>
+                    <a href="sassartikkel.html">SASS</a>
+                </li>
+                <li>
+                    <a href="seoartikkel.html">SEO</a>
+                </li>
+                <li>
+                    <a href="tilgjengelighetartikkel.html">Tilgjenglighet</a>
+                </li>
+                <li>
+                    <a href="someartikkel.html">Sosiale Medier</a>
+                </li>
+                <li>
+                    <a href="microdataartikkel.html">Microdata</a>
+                </li>
+            </ul>    
+        </nav>
+
+        <!--Main content-->
+        <main class="mainsection">
+            <!--Contains all main articles-->
+            <section class="articlecontainer">
+                <article class="article" id="article1">
+                    <h2>
+                        HTML-Skjema 
+                    </h2>
+                    <p>
+                        Et webskjema eller HTML-skjema på en webside tillater en bruker å legge inn data som sendes til en server for behandling.
+                        Skjemaer kan ligne på papir- eller databaseskjemaer fordi nettbrukere fyller ut skjemaene ved hjelp av avkrysningsruter, alternativknapper eller tekstfelt.
+                    </p>  
+                    <h2 class="smallarticleheader">HTML-skjemaer er bygd opp av: </h2>
+                    <ul>
+                        <li>
+                            For at vi skal lage et enkelt skjema i HTML så må vi først bruke elementet "Form". Dette elementet holder på hele skjemaet. I form-elementet må vi skrive hva som skal skje med informasjonen som brukeren fyller ut. Med action-attributen så kan man velge hvor informasjonen skal bli sendt, gjerne til en server i en php fil. 
+                            GET og POST er to forskjellige typer HTTP-forespørsler. GET brukes til å se på noe, uten å endre det, mens POST brukes til å endre noe.
+                        </li>
+                        <li>	
+                            For at vi skal kunne skrive informasjon inn i skjemaet så må vi ha et "Input"-element. I "input" elementet må vi ha et navn på inputen, for hvis man utelater dette så vil ikke dataen som blir skrevet inn bli lagret. Vi må også ha en "id" for å kombinere input-elementet og label- elementet. Inne i input-elementet skriver vi også inn hvordan "type" input vi skal ha. Vi har flere forskjellige typer informasjon vi kan få fra brukeren i et HTML-skjema. Her er noen forskjellige "typer" vi har i HTML5.
+                            <br>
+                            "Text" gir oss en tekststreng. Dette kan for eksempel brukes til å spøre om navnet til brukeren. "Email" gir oss en epostadresse. På noen nettlesere så vil epostadresser som du allerede har skrevet før bli anbefalt når du trykker på input feltet. På noen smarttelefoner så vil det dukke opp et alfakrøll og ".com" på tastaturet slik at det skal gå fortere å skrive inn epostadressen din.  
+                            "Date" gir oss en dato. Dette er smart hvis man skal for eksempel lage en side for et reisebyrå. Da kan brukeren velge reisedatoer enkelt. "Checkboxes" gir brukeren muligheten til å krysse av en eller flere bokser. Dette kan blant annet brukes til prøver hvor brukeren skal krysse av hvilket svar er riktig.
+                        </li>
+                        <li>
+                            For at brukeren skal se hvordan type informasjon brukeren skal legge inn så må vi bruke "label"-elementet. Dette gir oss muligheten til å navnsette "input"-elementet slik at det dukker opp tekst ved inputfeltet. 
+                            Det som er viktig når man bruker label-elementet er at man må skrive "for=x" hvor x er det samme som id-et i input-elementet. Da vil de "linkes" opp. 
+                            Label-elementet er også bra for tilgjenglighet. Svaksynte og blinde som bruker tekstlesere vil kunne høre hva som står siden det som står i label-elementet vil bli lest opp høyt.     
+                        </li> 
+                        <li>
+                            Til slutt kommer vi til knappen som skal sende informasjonen videre, en submitbutton. Dette lages med et input element hvor man skriver type som "submit". Etter man trykker på denne knappen så vil informasjonen som brukeren har fylt ut bli lagret. 
+                        </li>                        
+                    </ul>
+                    <figure>
+                        <img src="https://tutorialspage.com/wp-content/uploads/2011/09/simple-css-contact-form-1024x590.png" alt="HTML Skjema">
+                        <figcaption>HTML-skjemaer kan ta imot flere forskjellige typer informasjon fra brukeren.</figcaption>
+                    </figure> 
+                </article>   
+                <!--Form Example-->
+                <article class="formexample">
+                    <h2 class="smallarticleheader"> Eksempel på HTML-skjema</h2>
+                    <form class="htmlskjema" action="regi.php" method="POST">
+                    <fieldset>
+                    <legend>Personlig informasjon</legend>
+                        <label for="fornavn">Fornavn: </label>
+                        <input id="fornavn" type="text" name="fornavn"/>
+                        <label for="etternavn">Etternavn: </label>
+                        <input id="etternavn" type="text" name="etternavn">
+                        <label for="email">Email: </label>
+                        <input id="email" type="email" name="email" required>
+                        <label for="tel">Telefon: </label>
+                        <input id="tel" type="tel" name="phone" pattern="[0-9]{8}" maxlength="8">
+                        <textarea placeholder="Skriv inn noe: " id="textarea" cols="30" rows="3"></textarea>
+                        <!--Submitbutton-->
+                        <input type="submit" id="submitbutton" value="Submit"/>
+                    </fieldset>
+                    </form>  
+                </article>                    
+            </section>    
+        </main>
+        <!--Side section-->
+        <aside class="sidesection">
+            <section >
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fNcJuPIZ2WE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vj78j_Sy3uM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </aside>
+        <!--Footer-->
+        <footer class="footersection">
+            <section>
+                <p>Simen Kjærstad - simen.j.kjaerstad@hiof.no</p>
+            </section>
+        </footer>
+    </body>
+</html>
